@@ -32,7 +32,6 @@ USER node
 COPY . .
 
 # Expose the port that the application listens on.
-EXPOSE 4001
+EXPOSE 4000
 
 # Run the application.
-CMD npm start

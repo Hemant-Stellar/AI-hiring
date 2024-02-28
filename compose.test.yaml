@@ -7,14 +7,14 @@ services:
       NODE_ENV: development
     ports:
       - 4001:4001
-    volumes:
-      - .:/usr/src/app
+
   test:
     build:
       context: .
       dockerfile: /test/Dockerfile.test
-    command: npm test
-    volumes: 
-      - .:/usr/src/test/app
-    # depends_on:
-    #   - server
+    command: sh -c "while ! nc -z server 4001; do sleep 1; done && npm test"
+    ports:
+      - 4000:4000
+    depends_on:
+      - server
+    
