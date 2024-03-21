@@ -1,3 +1,2 @@
 # AI-hiring
-I and my team have integrated services of microsoft azure and openai to see what this revolutionary tech can do. <br>
-frontend is in main branch and backend in master
+This is the frontend of the project checkout [`backend`](https://github.com/Hemant-Stellar/AI-hiring/tree/master) branch for [`api`](https://github.com/Hemant-Stellar/AI-hiring/blob/master/README.md) references.
